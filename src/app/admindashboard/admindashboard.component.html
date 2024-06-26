@@ -1,0 +1,26 @@
+<div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.ihmdFUsOYb-UXsWgZMaeMAHaHa&pid=Api&P=0&h=180" alt="" width="35" height="27"></a><a href="login" (click)="logout()"><button class="btn btn-secondary mx-5">Logout</button></a>
+    </div>
+  </nav>
+</div>
+<div>
+    <h6 class="fs-4" style="text-align: center;">Hello!, Admin </h6> 
+</div>    
+<hr>
+
+<div class="container bg-light text-dark">
+  <div class="row">
+    <div class="  col-sm ">
+      <Strong class="fs-5">General Operational Control Engines - </Strong>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="addfooditem" style="color: white; text-decoration: none;">Add Food Menu </a></button>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="updatefooditem" style="color: white; text-decoration: none;">Update Food Menu</a></button>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="deletefooditem" style="color: white; text-decoration: none;">Delete Food Menu</a></button>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="foodmenu" style="color: white; text-decoration: none;">View All Food Menu List</a></button><br/><br>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="allcustomerorders" style="color: white; text-decoration: none;">View All Customer Orders</a></button>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="customer" style="color: white; text-decoration: none;">Open Customer Page</a></button>
+  </div>
+</div>
+<hr>
+<router-outlet></router-outlet>

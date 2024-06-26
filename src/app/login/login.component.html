@@ -1,0 +1,43 @@
+<section class="restaurants">
+    <div class="login-container">
+            <form class="login-form">
+
+              <div class="form-group">
+                <strong style="color: red;">{{msg}}</strong><br/>
+                    <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+                      <h2>Login</h2>
+                      <div class="form-group">
+                        <label class="form-label">Email ID</label>
+                        <input type="email" id="email" formControlName="emailid" placeholder="Enter email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" formControlName="password" placeholder="Enter password" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Type of User</label><br>
+                        <label for="admin">
+                          <input type="radio" id="admin"formControlName="typeofuser"value="admin"> Admin
+                        </label>
+                        <label for="customer">
+                          <input type="radio" id="customer" formControlName="typeofuser" value="customer" checked> Customer
+                        </label>
+                      </div>
+                      <button type="submit">Login</button>
+                    </form>
+                  </div>
+                  
+  
+                <!-- <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+                    <label class="form-label">Email ID</label>
+                    <input class="form-control p-2" type="emailid" formControlName="emailid"/><br/>
+                    <label class="form-label">Password</label>
+                    <input class="form-control " type="password" formControlName="password"/><br/>
+                    <label class="form-check-label p-2">Type of User</label><br>
+                    <input class="form-check-input px-2 mx-2" type="radio" formControlName="typeofuser" value="admin">Admin <br />
+                    <input class="form-check-input px-2 mx-2 my-2" type="radio" formControlName="typeofuser" value="customer">Customer <br/>
+                    <input class="button" type="submit" value="Sign In"/>
+                </form><br/>
+              </div> -->
+        <a routerLink="/signup">Create a new account!</a><br/>
+       
