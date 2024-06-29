@@ -1,29 +1,94 @@
-<body>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+
+
+<br>
+<br>
+
+<div>
+    <h6 class="fs-4" style="text-align: center;">Hello! {{emailid}} </h6>
+   
+<div>
+
+ 
+<hr>
+
+<div class="container bg-light text-dark">
+  <div class="row">
+    <div class="  col-sm ">
+      <Strong class="fs-5">Choose your favorite Resturant </Strong>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="roy" style="color: white; text-decoration: none;">Roy Resturant</a></button><button class="btn btn-primary px-4 mx-2"><a routerLink="ukbabe" style="color: white; text-decoration: none;">A2B</a></button><button class="btn btn-primary px-4 mx-2"><a routerLink="Shaans " style="color: white; text-decoration: none;">Shaans Restaurant</a></button>
+      <a href="#" id="logout-button">
+        <i class="fas fa-sign-out-alt"></i> Logout
+    </a>
+    </div>
+</div>
+<hr>
+<router-outlet></router-outlet>
 <section class="restaurants">
     <div class="container">
         <h2>Popular Restaurants</h2>
         <!-- Restaurant cards or listings -->
         <div class="restaurant-card">
-            <h3>Restaurant Name</h3>
-            <p>Category: Cuisine Type</p>
-            <p>Location: City, State</p>
-            <a href="#" class="btn">View Menu</a>
+            <h3>Roy Multi Cuisine Restaurant</h3>
+            <p>Category: Multi Cuisine</p>
+            <p>Location: Trichy, Tamil Nadu</p>
+            <a href="#" class="btn-btn-primary">View Menu</a>
+        </div>
+        <hr>
+        <div class="restaurant-card">
+            <h3>A2B Veg Restaurant</h3>
+            <p>Category:Vegetarian</p>
+            <p>Location: Trichy, Tamil Nadu</p>
+            <a href="#" class="btn-btn-primary">View Menu</a>
         </div>
         <!-- Repeat for other restaurants -->
     </div>
 </section>
-
+<hr>
 <section class="menu">
     <div class="container">
         <h2>Featured Menu Items</h2>
         <!-- Menu item cards or listings -->
         <div class="menu-item-card">
+            <div class="image-container">
+                <div class="card">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/05/red-sauce-pasta-recipe.jpg"  width="400" 
+                    height="350"alt="pasta">                   
+                     <div class="container">
+                      <h4><b>Pasta</b></h4>
+                      <p>22.99</p>
+                    </div>
+                  </div>  
+                  <div class="card">
+                    <img src="https://thumbs.dreamstime.com/b/crispy-fried-chicken-wings-wooden-table-kentucky-88919528.jpg" width="400" 
+                    height="350"
+                      alt="Chicken Wings">
+                     <div class="container">
+                      <h4><b>Crispy Fried Chicker Wings</b></h4>
+                      <p>9.99</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLq3i0hWZF5318082jYNEjuSA6i1M9Q3lKg&s"width="400" 
+                    height="350" alt="Chocolate cake">
+                     <div class="container">
+                      <h4><b>Chocolate Cake</b></h4>
+                      <p>9.99</p>
+                    </div>
+                  </div>               
+              
+               
+    
+            </div>
+           
           <app-root></app-root>
 
         </div>
         <!-- Repeat for other menu items -->
     </div>
 </section>
-</body>
 <hr>
+
 <router-outlet></router-outlet>

@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  //baseUrl:string = "http://localhost:9090/login"
-  baseUrl:string = "http://54.82.133.161/login"
+  baseUrl:string = "http://localhost:9090/login"
+  //baseUrl:string = "http://54.82.133.161/login"
   constructor(public httpClient:HttpClient) { } // DI for HttpClient
   //by default all method of httpcClient return type is json but if we return from backend as string, you use response as text
 

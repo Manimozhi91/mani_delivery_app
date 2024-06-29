@@ -1,0 +1,27 @@
+button {
+    width: 20%;
+    padding: 10px;
+    background-color: #1c1d1c;
+    color: white;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  h6{
+    font-size: large;
+  }
+  .container{
+    padding-bottom: 40%;
+
+  }
+  .header{
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
+  .logout{
+    padding-left: 80%;
+  }

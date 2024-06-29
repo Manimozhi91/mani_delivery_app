@@ -1,1 +1,13 @@
-<p>admindeletemenu works!</p>
+<div class="container">
+    <div class="d-flex">
+    <div class="p-1 flex-grow-1">
+        <h4 class="text-center my-5"><b>Delete Food Menu Item</b></h4><hr>
+            <form [formGroup]="deleteMenuRef" (ngSubmit)="deleteItem()">
+            <label class="form-label">Enter Food ID you want to delete</label>
+            <input class="form-control px-5" type="number" formControlName="fid"/><br/>
+            <input class="btn btn-primary px-5 ms-2 mx-2 btn-lg" type="submit" value="Delete Food Item"/>
+        </form>
+    </div>
+</div>
+<strong style="color: green;">{{msg}}</strong><br/>
+</div>

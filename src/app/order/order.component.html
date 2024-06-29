@@ -1,0 +1,66 @@
+
+
+
+<div style="text-align: center;">
+    <h2><b>Roy Restaurant</b></h2>
+
+
+    <strong style="color: green;">{{msg}}</strong><br/>
+<div class="container bg-light ">
+<div class="d-flex">
+<div class="flex-grow-1">
+    <h4 class="text-center" style="color:blueviolet;">Select your favorites</h4>
+    <form [formGroup]="customerOrderRef" (ngSubmit)="placeOrder()">
+        <div>
+        <input class="form-control" type="number" formControlName="fid" placeholder="Food ID" readonly/>
+        <input class="form-control" type="text" formControlName="cname" placeholder="Customer Name"/>
+        <input class="form-control" type="text" formControlName="contactno" placeholder="Contact No."/>
+        <input class="form-control" type="text" formControlName="location" placeholder="Location"/>
+        <input class="form-control" type="number" formControlName="qty" placeholder="Quantity"/>
+        <!-- <input class="form-control" type="number" formControlName="price" placeholder="Price (per a plate of food)" readonly/> -->
+    </div>
+    <br>
+    <div><input class="btn btn-primary px-5 ms-10 mx-2 btn-block" type="submit" value="Place Order"/>
+    </div>
+    </form>
+</div>
+    <div class="align-self-center">
+    </div>
+</div>
+</div><hr>
+    
+    <strong  *ngFor="let orderList of orderList"></strong>
+    
+    <div>
+      <div>
+      <div style="margin: 0%;">
+      </div>
+      <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+      <table class="table table-striped table-hover " border="2" >
+          <thead style='text-align:center; vertical-align:middle'>
+              <tr >
+                  <th scpoe="">Food ID</th>
+                  <th scpoe="">Food Name</th>
+                  <th scpoe="">Description</th>
+                  <th scope="">Image</th>
+                  <th scpoe="">Price</th>
+              </tr>
+          </thead>
+          <tbody style='text-align:center; vertical-align:middle'>
+              <tr *ngFor=" let roymenuList of roymenuList">
+                  <td>{{roymenuList.fid}}</td>
+                  <td>{{roymenuList.foodname}}</td>
+                  <td>{{roymenuList.description}}</td>
+                  <td><img src={{roymenuList.image}}  width="140px" height="100px"> </td>
+                  <td class="dollar" >{{roymenuList.price}}</td>
+                  <td>
+                    <button type="button" class="btn btn-primary mx-2"  (click)="getOrder(roymenuList)" >Add</button>
+                    <button type="button" class="btn btn-info px-2"  (click)="viewMenu()" >Cancel</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+      
+    
+    

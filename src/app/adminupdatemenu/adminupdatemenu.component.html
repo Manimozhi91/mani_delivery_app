@@ -1,1 +1,29 @@
-<p>adminupdatemenu works!</p>
+
+<div class="container">
+<div class="d-flex">
+<div class="p-1 flex-grow-1">
+    <h4 class="text-center my-5"><b>Update Food Menu Item</b></h4><hr>
+    <form [formGroup]="updateitemRef" (ngSubmit)="updateMenu()">
+        <label class="form-label">Food ID</label>
+        <input class="form-control px-5" type="number" formControlName="fid"/><br/>
+        <label class="form-label">Food Name</label>
+        <input class="form-control" type="text" formControlName="foodname"/><br/>
+        <label class="form-label">Description</label>
+        <input class="form-control" type="text" formControlName="description"/><br/>
+        <label class="form-label">Food Image</label>
+        <input class="form-control" type="text" formControlName="image"/><br/>
+        <label class="form-label">Price</label>
+        <input class="form-control" type="text" formControlName="price"/><br/>
+        <input class="btn btn-primary px-5 ms-2 mx-2 btn-lg" type="submit" value="Update Food Menu"/>
+        
+    </form><br>
+    <table>
+        <tr>
+            <th></th>
+        </tr>
+        <tbody>
+        <tr *ngFor="let fooditemdetails">
+            <td><input type="button"  (click)="update(fooditemdetails)" /></td>
+        </tr></tbody>
+    </table>
+    <strong style="color: green;">{{msg}}</strong><br/>

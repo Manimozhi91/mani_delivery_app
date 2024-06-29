@@ -13,6 +13,13 @@ import { AdminaddmenuComponent } from './adminaddmenu/adminaddmenu.component';
 import { AdmindeletemenuComponent } from './admindeletemenu/admindeletemenu.component';
 import { AdminupdatemenuComponent } from './adminupdatemenu/adminupdatemenu.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { AllordersComponent } from './allorders/allorders.component';
+import { OrderComponent } from './order/order.component';
+import { RoyrestaurantComponent } from './royrestaurant/royrestaurant.component';
+import { RoymenuComponent } from './roymenu/roymenu.component';
+import { RoyfinditemComponent } from './royfinditem/royfinditem.component';
+import { FindcustomerorderComponent } from './findcustomerorder/findcustomerorder.component';
+import { ViewmyorderComponent } from './viewmyorder/viewmyorder.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +31,13 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
     AdmindeletemenuComponent,
     AdminupdatemenuComponent,
     RestaurantsComponent,
+    AllordersComponent,
+    OrderComponent,
+    RoyrestaurantComponent,
+    RoymenuComponent,
+    RoyfinditemComponent,
+    FindcustomerorderComponent,
+    ViewmyorderComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,24 @@
-<p>adminaddmenu works!</p>
+
+<div class="container bg-white">
+
+<div class="flex-grow-1">
+    
+    <h4 class="text-center my-5"><b>Add Food Menu Item</b></h4><hr>
+    <form [formGroup]="additemRef" (ngSubmit)="addMenu()">
+        <label class="form-label">Food ID</label>
+        <input class="form-control px-2" type="number" formControlName="fid"/><br/>
+        <label class="form-label">Food Name</label>
+        <input class="form-control" type="text" formControlName="foodname"/><br/>
+        <label class="form-label">Description</label>
+        <input class="form-control" type="text" formControlName="description"/><br/>
+        <label class="form-label">Food Image</label>
+        <input class="form-control" type="text" formControlName="image"/><br/>
+        <label class="form-label">Price</label>
+        <input class="form-control" type="text" formControlName="price"/><br/>
+        <input class="btn btn-primary px-5 ms-2 mx-2 btn-md" type="submit" value="Add Food to Menu"/>
+    </form>
+</div>
+<strong style="color: green;">{{msg}}</strong><br/>
+</div>
+
+<router-outlet></router-outlet>

@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminService {
- //baseUrl:string = "http://localhost:9090/food"
- baseUrl:string = "http://54.82.133.161/food"
+ baseUrl:string = "http://localhost:9090/food"
+ //baseUrl:string = "http://54.82.133.161/food"
  constructor(public httpClient:HttpClient) { } // DI for HttpClient
 
  addFood(item:any):Observable<string> {
@@ -19,7 +19,7 @@ export class AdminService {
  }
 
  deleteFood(item:any):Observable<string> {
-   return this.httpClient.delete(this.baseUrl+"/deletefood"+item,{responseType:"text"})
+   return this.httpClient.delete(this.baseUrl+"/deletefood/"+item,{responseType:"text"})
  }
  
 }

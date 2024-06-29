@@ -1,0 +1,36 @@
+
+<div style="text-align: center;">
+    <h2><b>Roy Multi Cuisine Restaurant</b></h2>
+    </div>
+    
+    <strong  *ngFor="let foodOrderList of foodOrderList"></strong>
+    
+    <div>
+      <div>
+      <div style="margin: 0%;">
+      </div>
+      <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+      <table class="table table-striped table-hover " border="2" >
+          <thead style='text-align:center; vertical-align:middle'>
+              <tr >
+                  <th scope="">Food ID</th>
+                  <th scope="">Food Name</th>
+                  <th scope="">Description</th>
+                  <th scope="">Image</th>
+                  <th scope="">Price</th>
+              </tr>
+          </thead>
+          <tbody style='text-align:center; vertical-align:middle'>
+              <tr *ngFor=" let roy of roy">
+                  <td>{{roy.fid}}</td>
+                  <td>{{roy.foodname}}</td>
+                  <td>{{roy.description}}</td>
+                  <td><img src={{roy.image}}  width="140px" height="100px"> </td>
+                  <td class="dollar" >{{roy.price}}</td>
+                 
+              </tr>
+          </tbody>
+      </table>
+      
+       
+      

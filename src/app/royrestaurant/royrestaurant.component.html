@@ -1,0 +1,71 @@
+<h2>Welcome to Roy Multi Cuisine Restaurant</h2>
+<h4>Select your pick</h4>
+<div>
+  <div>
+
+  <div style="margin: 0%;">
+  </div>
+  <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+  <table class="table table-striped table-hover">
+      <thead>
+          <tr >
+              <th scpoe="">Food ID</th>
+              <th scpoe="">Food Name</th>
+              <th scpoe="">Description</th>
+              <th scpoe="">Quantity</th>
+              <th scpoe="">Price</th>
+              <th scpoe="">Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                  <button class="btn btn-info " data-bs-toggle="modal" data-bs-target="#exampleModal" value="updateClient" >Place Order</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  
+    
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Form</h5>
+        </div>
+        <div class="modal-body">
+            <form >
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Food ID</label>
+                  <input type="text" formControlName="fid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Food Name</label>
+                  <input type="text" formControlName="fname" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Quantity</label>
+                    <input type="email" formControlName="qty" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Price</label>
+                    <input type="tetx" formControlName="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>     
+                           
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+          <button type="button"  class="btn btn-primary" >Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

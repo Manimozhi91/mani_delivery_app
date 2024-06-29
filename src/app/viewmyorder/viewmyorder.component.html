@@ -1,0 +1,51 @@
+
+<div style="text-align: center;">
+    <h2><b>Roy Multi-Cuisine Restaurant</b></h2>
+    <strong>Customer Orders Page</strong>
+    </div>
+        
+    <div>
+      <div>
+      <div style="margin: 0%;">
+      </div>
+      <Strong class="p-2 mx-auto fs-4"  ><b> My Orders</b></Strong>
+      <table class="table table-striped table-hover " border="2" >
+          <thead style='text-align:center; vertical-align:middle'>
+              <tr >
+                  <th scpoe="">Order ID</th>
+                  <th scpoe="">Customer Name</th>
+                  <th scpoe="">Contact No.</th>
+                  <th scope="">Google Map location</th>
+                  <th scpoe="">Quantity</th>
+                  <th scpoe="">Amount</th>
+                  <th scpoe="">Status</th>
+                  <th scpoe="">Food ID</th>
+                  <th scpoe="">Food Name</th>
+                  <th scpoe="">Description</th>
+                  <th scope="">Image</th>
+              </tr>
+          </thead>
+          <tbody style='text-align:center; vertical-align:middle'>
+              <tr *ngFor=" let myorderlist of myorderlist">
+                  <td>{{myorderlist.oid}}</td>
+                  <td>{{myorderlist.cname}}</td>
+                  <td>{{myorderlist.contactno}}</td>
+                  <td>{{myorderlist.location}}</td>
+                  <td>{{myorderlist.qty}}</td>
+                  <td>{{myorderlist.price * myorderlist.qty }}</td>
+                  <td>{{myorderlist.status}}</td>
+                  <td>{{myorderlist.fid}}</td>
+                  <td>{{myorderlist.foodname}}</td>
+                  <td>{{myorderlist.description}}</td>
+                  <td><img src={{myorderlist.image}}  width="140px" height="100px"> </td>
+                  <td>
+                    <button type="button" id="openOrderForm" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Cancel Order</button>
+                      
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      
+      
+    
+    
